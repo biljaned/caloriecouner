@@ -6,14 +6,14 @@ const clearButton = document.getElementById('clear');
 const output = document.getElementById('output');
 let isError = false;
 
-function cleanInputString(str) {
+function cleanInputString(slovo) {
   const regex = /[+-\s]/g;
-  return str.replace(regex, '');
+  return slovo.replace(regex, '');
 }
 
-function isInvalidInput(str) {
+function isInvalidInput(slovo) {
   const regex = /\d+e\d+/i;
-  return str.match(regex);
+  return slovo.match(regex);
 }
 
 function addEntry() {
